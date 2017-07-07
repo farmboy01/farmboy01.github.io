@@ -5,5 +5,13 @@ title: Ben's Studies
 <div class="Books" id="2017BooksDiv">
 	<h1>Books Read in 2017</h1>
 	<table>
-  </table>
+		<tr><td>Title</td><td>Completed</td><td>Pages</td></tr>
+		{% for book in site.data.books %}
+		  <tr>
+	            <td>{{ book.title }}</td>
+	            <td>{{ book.completed }}</td>
+		    <td>{{ book.pages }}</td>
+		  </tr>
+                {% endfor %}
+         </table>
 </div><!-- /.Books -->
