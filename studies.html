@@ -8,10 +8,7 @@ title: Ben's Studies
 		<tr><th>Title</th><th>Completed</th><th>Pages</th><th>Rating</th></tr>
 		{% for book in site.data.books %}
 		  <tr>
-	            <td>{{ book.title }}</td>
-	            <td>{{ book.completedDate }}</td>
-		    <td>{{ book.pages }}</td>
-		    <td>{{ book.rating }}</td>
+	            <td>{{ book.title }}</td><td>{{ book.completedDate }}</td><td>{{ book.pages }}</td><td>{{ book.rating }}</td>
 		  </tr>
                 {% endfor %}
          </table>
