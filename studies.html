@@ -4,6 +4,7 @@ title: Ben's Studies
 ---
 <div class="Books" id="2017BooksDiv">
 	<h1>Books Read in 2017</h1>
+      <div class="wrapper">
 	<table class="table">
 		<tr class="row header blue"><th>Title</th><th>Completed</th><th>Pages</th><th>Rating</th></tr>
 		{% for book in site.data.books %}
@@ -15,4 +16,5 @@ title: Ben's Studies
 		  </tr>
                 {% endfor %}
          </table>
+	</div><!--/.wrapper-->
 </div><!-- /.Books -->
