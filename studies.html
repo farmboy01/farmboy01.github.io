@@ -4,14 +4,14 @@ title: Ben's Studies
 ---
 <div class="Books" id="2017BooksDiv">
 	<h1>Books Read in 2017</h1>
-	<table>
-		<tr><th>Title</th><th>Completed</th><th>Pages</th><th>Rating</th></tr>
+	<table class="table">
+		<tr class="row header blue"><th>Title</th><th>Completed</th><th>Pages</th><th>Rating</th></tr>
 		{% for book in site.data.books %}
-		  <tr>
-		    <td> {{ book.title }} </td>
- 	            <td> {{ book.completedDate }} </td>
- 		    <td> {{ book.pages }} </td>
- 		    <td> {{ book.rating }} </td>
+		  <tr class="row">
+		    <td class="cell"> {{ book.title }} </td>
+ 	            <td class="cell"> {{ book.completedDate }} </td>
+ 		    <td class="cell"> {{ book.pages }} </td>
+ 		    <td class="cell"> {{ book.rating }} </td>
 		  </tr>
                 {% endfor %}
          </table>
