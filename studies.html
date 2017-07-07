@@ -3,18 +3,29 @@ layout: default
 title: Ben's Studies
 ---
 <div class="Books" id="2017BooksDiv">
-	<h1>Books Read in 2017</h1>
+      <div class="table-title">
+	<h3>Books Read in 2017</h3>
+      </div>
       <div class="wrapper">
-	<table class="table">
-		<tr class="row header blue"><th>Title</th><th>Completed</th><th>Pages</th><th>Rating</th></tr>
+	<table class="table-fill">
+		<thead>
+		<tr class="book-head">
+	          <th class="text-left">Title</th>
+		  <th class="text-left">Completed</th>
+	          <th class="text-left">Pages</th>
+		  <th class="text-left">Rating</th>
+		</tr>
+		</thead>
+		<tbody class="table-hover">
 		{% for book in site.data.books %}
 		  <tr class="row">
-		    <td class="cell"> {{ book.title }} </td>
- 	            <td class="cell"> {{ book.completedDate }} </td>
- 		    <td class="cell"> {{ book.pages }} </td>
- 		    <td class="cell"> {{ book.rating }} </td>
+		    <td class="text-left"> {{ book.title }} </td>
+ 	            <td class="text-left"> {{ book.completedDate }} </td>
+ 		    <td class="text-left"> {{ book.pages }} </td>
+ 		    <td class="text-left"> {{ book.rating }} </td>
 		  </tr>
                 {% endfor %}
+		</tbody>
          </table>
 	</div><!--/.wrapper-->
 </div><!-- /.Books -->
