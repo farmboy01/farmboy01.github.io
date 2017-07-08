@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 name: Home of Ben
+title: Home of Ben
 markdown: kramdown
+description: Musings on random things from Data Science to Powerlifting
+show_downloads: false
+show_gh_link: false
