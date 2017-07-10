@@ -5,5 +5,9 @@ markdown: kramdown
 description: Musings on random things from Data Science to Powerlifting
 show_downloads: false
 show_gh_link: false
+repository: farmboy01/farmboy01.github.io
+highlighter: rouge
 gems:
   - jekyll-feed
+  - jemoji
+  - jekyll-sitemap
