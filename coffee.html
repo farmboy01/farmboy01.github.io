@@ -1,4 +1,7 @@
---- layout: default title: Coffee ---
+---
+layout: default
+title: Coffee
+---
 <div class="coffee" id="coffeeDiv">
     <div class="table-title">
         <h3>Coffee</h3>
@@ -9,6 +12,7 @@
                 <tr class="coffee-head">
                     <th class="text-left">Roaster</th>
                     <th class="text-left">Variety</th>
+                    <th class="text-left">Purchased</th>
                     <th class="text-left">Notes</th>
                     <th class="text-left">Rating</th>
                 </tr>
@@ -18,6 +22,7 @@
                 <tr class="row">
                     <td class="text-left"> {{ coffee.roaster }} </td>
                     <td class="text-left"> {{ coffee.variety }} </td>
+                    <td class="text-left"> {{ coffee.purchased }} </td>
                     <td class="text-left"> {{ coffee.notes }} </td>
                     <td class="text-left"> {{ coffee.rating }} </td>
                 </tr>
