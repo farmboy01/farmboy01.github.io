@@ -1,0 +1,30 @@
+--- layout: default title: Coffee ---
+<div class="coffee" id="coffeeDiv">
+    <div class="table-title">
+        <h3>Coffee</h3>
+    </div>
+    <div class="wrapper">
+        <table class="table-fill">
+            <thead>
+                <tr class="coffee-head">
+                    <th class="text-left">Roaster</th>
+                    <th class="text-left">Variety</th>
+                    <th class="text-left">Notes</th>
+                    <th class="text-left">Rating</th>
+                </tr>
+            </thead>
+            <tbody class="table-hover">
+                {% for coffee in site.data.coffee %}
+                <tr class="row">
+                    <td class="text-left"> {{ coffee.roaster }} </td>
+                    <td class="text-left"> {{ coffee.variety }} </td>
+                    <td class="text-left"> {{ coffee.notes }} </td>
+                    <td class="text-left"> {{ coffee.rating }} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!--/.wrapper-->
+</div>
+<!-- /.coffees -->

@@ -1,0 +1,6 @@
+cd /Users/BenMac/github/farmboy01.github.io
+git add .
+git commit -m “update text”
+git push -u origin master
+#git pull origin master
+bundle exec jekyll serve
